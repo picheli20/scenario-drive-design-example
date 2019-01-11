@@ -1,0 +1,40 @@
+<form>
+  <div class="form-group">
+    <label>Email address</label>
+    <input type="email" class="form-control">
+  </div>
+  <div class="row">
+    <div class="col-6 image-container">
+      <img *ngIf="type === 'cat'" src="https://media3.giphy.com/media/33OrjzUFwkwEg/giphy.gif">
+      <img *ngIf="type === 'dog'" src="https://media0.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif">
+    </div>
+    <div class="col-6">
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Country</label>
+        <select class="form-control">
+          <option>Poland</option>
+          <option>Italy</option>
+          <option>England</option>
+          <option>Brazil</option>
+          <option>United States</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Zip Code</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Street</label>
+    <input type="text" class="form-control">
+  </div>
+</form>
