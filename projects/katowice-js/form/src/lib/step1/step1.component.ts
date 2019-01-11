@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 /**
- * @group Forms
+ * @group Registration
  * @component Step 1
  * @description My component <b>description</b>
  */
