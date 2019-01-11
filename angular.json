@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "@katowice-js/form": {
+      "root": "projects/katowice-js/form",
+      "sourceRoot": "projects/katowice-js/form/src",
+      "projectType": "library",
+      "prefix": "kf",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/katowice-js/form/tsconfig.lib.json",
+            "project": "projects/katowice-js/form/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/katowice-js/form/src/test.ts",
+            "tsConfig": "projects/katowice-js/form/tsconfig.spec.json",
+            "karmaConfig": "projects/katowice-js/form/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/katowice-js/form/tsconfig.lib.json",
+              "projects/katowice-js/form/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "scenario-drive-design-example"

@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@katowice-js/form": [
+        "dist/katowice-js/form"
+      ],
+      "@katowice-js/form/*": [
+        "dist/katowice-js/form/*"
+      ]
+    }
   }
 }
